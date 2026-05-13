@@ -1,13 +1,18 @@
-.jersey-20-regular {
-  font-family: "Jersey 20", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+body {
+    background: linear-gradient(135deg, #fff0f6, #ffd6e7, #ffc2dc) !important;
+    font-family: 'Press Start 2P', cursive !important;
 }
-body{
-    font-family: "Jersey 20";
 
-}
-#sideIcon{
-    height: 5px;
-    width: 5px;
+/* Make Bootstrap components use your font too */
+.navbar,
+.nav-link,
+.navbar-brand,
+.btn,
+.card,
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: 'Press Start 2P', cursive !important;
 }
