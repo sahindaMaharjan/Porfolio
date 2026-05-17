@@ -1,18 +1,81 @@
-body {
-    background: linear-gradient(135deg, #fff0f6, #ffd6e7, #ffc2dc) !important;
-    font-family: 'Press Start 2P', cursive !important;
+/* FONT */
+.jersey-20-regular {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Make Bootstrap components use your font too */
-.navbar,
-.nav-link,
-.navbar-brand,
-.btn,
-.card,
-h1,
-h2,
-h3,
-p,
-a {
-    font-family: 'Press Start 2P', cursive !important;
+/* BODY */
+body{
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: "Jersey 20", sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #0f172a;
+    margin-left: 10px;
+    border-bottom: 1px solid #55334a;
+}
+
+/* NAV LINKS */
+.nav-link{
+    color: #e2e8f0 !important;
+    margin-left: 10px;
+}
+
+.nav-link:hover, #Name:hover, .bi:hover, #option:hover, .navbar{
+    color: hsl(337, 100%, 71%) !important;
+}
+
+/* PARAGRAPH */
+p, li{
+    color: #94a3b8;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, #Name, .bi{
+    color: #e2e8f0;
+}
+
+/* CARDS */
+.card{
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    color: #f0e2ec;
+    transition: 0.3s;
+}
+    
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+
+/* IMAGES */
+img{
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* LINKS */
+a{
+    color: hsl(337, 100%, 71%) ;
+    text-decoration: none;
+}
+
+a:hover{
+    color: hsl(337, 82%, 83%); 
+}
+
+/* BUTTONS (Bootstrap override) */
+.btn-secondary{
+    background-color: hsl(337, 100%, 71%)  !important;
+    border: none !important;
+}
+
+.btn-secondary:hover{
+    background-color: hsl(337, 82%, 83%) !important;
 }

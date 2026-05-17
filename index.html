@@ -4,29 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!--tab icon-->
     <link rel="shortcut icon" href="images/icons/tabicon.png" type="image/x-icon">
     <script src="script.js"></script>
     <title>Sahinda</title>
+    <!--for fontstyle-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <!--for custom styling-->
+    <link rel="stylesheet" href="style.css">
+    <!--for transition-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body style="text-align: center;">
-    <style>
-        .my-custom-row {}
-    </style>
 
     <div class="container p-3 ">
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="">Sahinda</a>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <a class="navbar-brand" id="Name" href="#">Sahinda</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav mb-auto">
                     <a class="nav-link" href="#">Home</a>
@@ -36,14 +40,13 @@
                     <a class="nav-link" href="#Art">Art</a>
                 </div>
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="http://linkedin/in/sahindamaharjan/"><img
-                            src="node_modules/bootstrap-icons/icons/linkedin.svg" alt=""></a>
-                    <a class="nav-link" href="http://github.com/sahindaMaharjan"><img
-                            src="node_modules/bootstrap-icons/icons/github.svg" alt=""></a>
-                    <a class="nav-link" href="mailto:sahindamaharjan2016@gmail.com"><img
-                            src="node_modules/bootstrap-icons/icons/envelope.svg" alt=""></a>
+                    <a class="nav-link me-sm-1 me-lg-4" href="http://linkedin.com/in/sahindamaharjan/"> <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="nav-link me-sm-1 me-lg-4" href="http://github.com/sahindaMaharjan"><i class="bi bi-github"></i></a>
+                    <a class="nav-link" href="mailto:sahindamaharjan2016@gmail.com"><i class="bi bi-envelope"></i></a>
                 </div>
             </div>
+
         </nav>
         <div class="content">
             <div class="intro p-5">
@@ -63,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="p-5" id="About">
+            <div data-aos="fade-up" class="p-5" id="About">
                 <h1>About me</h1>
 
                 <div class="row p-3">
@@ -88,7 +91,7 @@
                 </div>
 
             </div>
-            <div class="p-5" id="Experience">
+            <div data-aos="fade-up" class="p-5" id="Experience">
                 <h1>Experience</h1>
                 <div class="row p-3">
                     <div class="col-sm-6">
@@ -103,9 +106,9 @@
                             <li> Identified trends and translated raw data into actionable business insights.</li>
                         </ul>
                     </div>
-            
+
                     <div class="col-sm-6">
-                        <h4>Data / Technology Intern | Invia Technologies</h4>
+                        <h4>Data / Technology Intern | Envia Technologies</h4>
                         <p class="text-muted">Remote | 2024 – 2025</p>
 
                         <ul>
@@ -117,19 +120,18 @@
                     </div>
                 </div>
             </div>
-            <!--
-            <div class="p-5" id="Project">
+
+            <div data-aos="fade-up" class="p-5" id="Project">
                 <h1>Projects</h1>
-                <!--<a href="https://github.com/sahindaMaharjan">View All</a>
-                <div class="row">
+                <a class="" href="https://github.com/sahindaMaharjan">View All</a>
+                <div class="row p-1">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card h:100">
                             <img src="" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Drawing board</h5>
                                 <p class="card-text"></p>
-                                <a href="https://github.com\sahindaMaharjan"><img
-                                        src="node_modules/bootstrap-icons/icons/github.svg" alt=""></a>
+                                <a href="https://github.com\sahindaMaharjan"><i class="bi bi-github"></i></a>
                             </div>
 
                         </div>
@@ -140,28 +142,35 @@
                             <div class="card-body">
                                 <h5 class="card-title">Drawing board</h5>
                                 <p class="card-text"></p>
-                                <a href="https://github.com\sahindaMaharjan"><img
-                                        src="node_modules/bootstrap-icons/icons/github.svg" alt=""></a>
+                                <a href="https://github.com\sahindaMaharjan"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <div class="p-4" id="Art">
+            </div>
+            <div data-aos="fade-up" class="p-4" id="Art">
                 <h1>Art</h1>
-                <!--<a href="artCollection.html">Explore</a>-->
+                <div class="row">
+                    <div class="col-9 text-start">
+                        <p>Some of my digital and traditional artworks.</p>
+                    </div>
+                    <div class="col-3 text-end">
+                        <a href="artCollection.html">Explore</a>
+                    </div>
+                </div>
+
                 <div class="row p-3">
-                    <div class="col-sm-4">
+                    <div class="col-12 col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="images/ArtCollection/Art.1.jpeg" class="card-img-top" alt="">
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-12 col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="images/ArtCollection/Art.2.jpeg" class="card-img-top" alt="">
                         </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-12 col-md-4">
                         <div class="card" style="width: 18rem;">
                             <img src="images/ArtCollection/Smtg_I_Enjoyed_.png" class="card-img-top" alt="">
                         </div>
@@ -181,7 +190,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
 </body>
 

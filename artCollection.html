@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +8,42 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-dark text-light">
+<body style="text-align: center;" class="container">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-black">
+    <nav class="navbar navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                ← Back
+            <a id="option" class="navbar-brand fw-bold" href="index.html">
+                ←  Back
             </a>
+            <hr>
+
         </div>
     </nav>
-
     <!-- Art Section -->
     <section class="container py-5">
-        
-        <h1 class="text-center mb-5">Art Collection</h1>
+
+        <h2 class="text-center mb-5">Art Collection</h2>
 
         <div class="row g-4">
 
             <div class="col-md-6">
                 <div class="card bg-secondary border-0 shadow">
-                    <img src="images/ArtCollection/Art.1.jpeg" 
-                         class="card-img-top img-fluid" 
-                         alt="Artwork 1">
+                    <img src="images/ArtCollection/Art.1.jpeg" class="card-img-top img-fluid" alt="Artwork 1">
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="card bg-secondary border-0 shadow">
-                    <img src="images/ArtCollection/Art.2.jpeg" 
-                         class="card-img-top img-fluid" 
-                         alt="Artwork 2">
+                    <img src="images/ArtCollection/Art.2.jpeg" class="card-img-top img-fluid" alt="Artwork 2">
                 </div>
             </div>
 
@@ -48,10 +52,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black text-center py-4">
-        <p class="mb-1">Built and designed by Sahinda Maharjan.</p>
-        <p> All rights reserved. &copy; </p>
-    </footer>
+        <div>
+            <footer class="p-4">
+                <p class="mb-1">Built and designed by Sahinda Maharjan.</p>
+                <p>&copy; All rights reserved.</p>
+            </footer>
+        </div>
 
 </body>
+
 </html>
