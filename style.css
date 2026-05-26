@@ -16,7 +16,7 @@ body{
 .navbar{
     background-color: #0f172a;
     margin-left: 10px;
-    border-bottom: 1px solid #55334a;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 /* NAV LINKS */
@@ -53,13 +53,16 @@ h1, h2, h3, h4, #Name, .bi{
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-
 /* IMAGES */
 img{
     border-radius: 15px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
 
+#character{
+    border-radius: none;
+    box-shadow: none;
+}
 /* LINKS */
 a{
     color: hsl(337, 100%, 71%) ;
